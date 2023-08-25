@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/*
+	(25, 29, 105)
+*/
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to top, rgba(0,0, 0, 0.30), 
+	rgba(0, 0, 0, 0.75)), url("codeback.gif");
+	background-size: cover;
+	background-position: center;
+}
+/*
+
+translateY(-50%) gör så att elemenetet rör sig uppåt med hälften av dess höjd, vilket gör att elementet blir centrerat. efter som toppen av elementet
+normalt ligger under linjen som är centrum
+
+text-align kan användas för att centrera block element direkt eller centrera child element som är inline
+
+*/
+.test{
+	font-size: 10vw;
+	transform: translateY(-50%);
+	color: white;
+	font-family: sans-serif;
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.container_music{
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), rgba(252, 200, 3, 0.20)), url("musikstuff2.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+}
+/*
+	display: inline-block;
+    vertical-align: top; lär dig mera om 
+	hitta en lösning till top problemet
+*/
+.downloadholder{
+	position: relative;
+	display: inline-block; 
+	height: 80%;
+	width: 30%;
+	float: right;
+	top:0%;
+	border: solid black 2px;
+	background-color: white;
+}
+.downloadcontent{
+	font-family: 'VT323', monospace;
+	font-size: 50px;
+	text-align: center;
+}
+.downloadholder a{
+	font-family: 'VT323', monospace;
+	font-size: 25px;
+}
+.listbox{
+	width: 69%;
+	height: 100vh;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+.hey{ 
+	position: relative;
+	display: inline-block;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+}

@@ -1,0 +1,54 @@
+.contain{
+			display: flex;
+			justify-content: flex-end;
+			margin-right: 15%;
+		}
+		/*
+			padding är hur stor varje item är
+			medan margin är hur mycket plats den tar upp på varje sida
+			margin kan också användas för att trycka ihop element
+			
+			padding: 25px 50px 75px 100px;
+			top padding is 25px
+			right padding is 50px
+			bottom padding is 75px	
+			left padding is 100px
+		*/
+		.contain > div{
+			position: relative;
+			display: inline-block;
+			margin: 0 20px;
+			text-align: center;
+			padding: 20px 15px 20px 15px;
+			color: white;
+			font-family: sans-serif;
+		}
+		div button{
+			padding: 10px 10px 10px 10px;
+			background-color: #33FFBD;
+			border: none;
+			border-radius:4em;
+			color: white;
+			margin: 15px;
+		}
+		/*
+			Lär dig om z-index
+		*/
+		.contain > div::after{
+			content: '';
+			height: 3px;
+			width: 0%;
+			background: #33FFBD;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: 0.5s;
+			z-index: 1;
+		}
+		.contain > div:hover::after{
+			width: 100%;
+		}
+		img{ 
+			width:25px;
+			transform: translateY(+25%);
+		}

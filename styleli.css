@@ -1,0 +1,81 @@
+/*
+/25A0
+font-weight: bold;
+*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+ul {
+  list-style: none;
+  margin-left: 14%;
+  position:relative;
+  top: 34%;
+  color: black;
+  display: block;
+}
+/*
+	css ordning gör skillnad
+*/
+
+
+div h1{
+	margin-left: 8%;
+	font-size: 87.5px;
+	position: relative;
+	top: 34%;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.head{
+	animation-name: fade;
+	animation-duration: 1s;
+}
+div ul li{
+	font-family: 'VT323', monospace;
+	color: black;
+	margin-right: 0;
+	padding-right: 0;
+	display: none;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+/*
+
+*/
+@keyframes fade{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+div button{
+	padding: 10px 10px 10px 10px;
+	background-color: #33FFBD;
+	border: none;
+	border-radius:4em;
+	color: white;
+}
+
+div button:hover{
+	cursor: pointer;
+}
+
+div ul li::before {
+  content: "\25A0";
+  color: red;
+  font-size: 10px;
+  transform: translateY(-25%);
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 0;
+  padding-right: 0;
+}
+/*
+	repetera inline och inline-block
+	float: left
+	lämnar annar mellanrum i mitten
+	
+	font-style: italic;
+	text-decoration: underline;
+	
+*/
+
